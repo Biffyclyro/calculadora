@@ -1,11 +1,11 @@
 <form>
   <div class="form-group">
     <label for="email">Email </label>
-    <input [(ngModel)]="usuario.email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+    <input [(ngModel)]="usuario.email" type="email" class="form-control" id="email" name="email" placeholder="Enter email">
   </div>
   <div class="form-group">
     <label for="telefone">Telefone</label>
-    <input [(ngModel)]="usuario.telefone" type="password" class="form-control" id="telefone" placeholder="Password">
+    <input [(ngModel)]="usuario.telefone" type="number" name="telefone" class="form-control" id="telefone" placeholder="Password">
   </div>
 
   <button (click)="atualizarDados()" type="submit" class="btn btn-primary">Salvar</button>

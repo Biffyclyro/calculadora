@@ -16,8 +16,6 @@ export class CadastroComponent implements OnInit {
 
 
   ngOnInit() {
-    this.usuario.telefone = 1234;
-    this.usuario.email = 'joao';
   }
   atualizarDados() {
     console.log(this.usuario.email);
