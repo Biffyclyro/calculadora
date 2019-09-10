@@ -6,19 +6,24 @@ import { AppComponent } from './app.component';
 import { CalculadoraComponent } from './calculadora/calculadora.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import {FormsModule} from '@angular/forms';
+import { GatosComponent } from './gatos/gatos.component';
+import {GatosService} from './services/gatos.service';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalculadoraComponent,
-    CadastroComponent
+    CadastroComponent,
+    GatosComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [GatosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
